@@ -12,3 +12,6 @@ URL: https://github.com/yaridmd/xkcd
 BugReports: https://github.com/yaridmd/xkcd/issues
 Imports: 
     jsonlite
+Depends: 
+    R (>= 3.5)
+LazyData: true
