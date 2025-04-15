@@ -3,7 +3,7 @@
 #' Given a comic number, the `xkcd()` function calls the xkcd JSON API and returns metadata about the comic in the form of a list object.
 #' @param number A scalar numeric vector corresponding to an xkcd comic number
 #' @importFrom jsonlite read_json
-#' @return A list of 13 elements
+#' @return A list of 11 elements
 #' * `month`: A scalar character vector
 #' * `num`: A scalar numeric vector
 #' * `link`: A scalar character vector, may be empty
@@ -49,7 +49,7 @@ draw_comic <- function(x) {
 
   if (img_type == "png") {
     img <- png::readPNG(tmp$content)
-  } else {
+  } else if (img_type == "jpg" || img_type == "jpeg") {
     img <- jpeg::readJPEG(tmp$content)
   }
 

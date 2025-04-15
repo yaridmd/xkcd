@@ -10,7 +10,7 @@ xkcd(number)
 \item{number}{A scalar numeric vector corresponding to an xkcd comic number}
 }
 \value{
-A list of 13 elements
+A list of 11 elements
 \itemize{
 \item \code{month}: A scalar character vector
 \item \code{num}: A scalar numeric vector
